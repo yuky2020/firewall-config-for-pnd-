@@ -1,0 +1,81 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Fantastic Coffee Maker :: Only Italian Coffee</title>
+	<link rel="stylesheet" href="assets/style.css" type="text/css"/>
+	<script src="assets/display.js"></script>
+	<script>
+        function openCash() {
+            if (confirm("WARNING! Only authorized personeel should use this button. Continue?")) {
+				location.href = "open-cash.asp";
+			}
+		}
+	</script>
+</head>
+<body>
+
+<h1>Fantastic® Coffee Maker!</h1>
+<p align="center">
+	<small>
+		<a href="http://fantasticcoffee.tk" target="_blank">fantasticcoffee.tk</a>
+	</small>
+</p>
+
+<table border="1">
+	<tr>
+		<td align="center">
+			<img src="assets/coffee-maker.jpg"/>
+		</td>
+		<td valign="top">
+			Display: <br/>
+			<pre id="coffee-display">              </pre>
+			<br/>
+			
+				Prices:<br />
+				Coffee: 0.30 €<br />
+				Tea: 0.50 €<br />
+				Hot Water: 0.10 €<br />
+				Sugar is free!!
+			
+		</td>
+		<td valign="middle" style="width: 150px;">
+			Coffee: <span style="width: 80px;" class="progressbar"></span> 80%<br/><br/>
+			Tea: <span style="width: 72px;" class="progressbar"></span> 72%<br/><br/>
+			Water: <span style="width: 90px;" class="progressbar"></span> 90%<br/><br/>
+			Sugar: <span style="width: 66px;" class="progressbar"></span> 66%<br/><br/>
+		</td>
+	</tr>
+</table>
+
+<hr/>
+
+<form action="login.asp" method="post">
+	<table border="1">
+		<tr>
+			<td colspan="2" align="center">Login reserved to manufacturer</td>
+		</tr>
+		
+		<tr>
+			<td>Username</td>
+			<td>
+				<input type="text" value="" name="username"/>
+			</td>
+		</tr>
+		<tr>
+			<td>Password</td>
+			<td>
+				<input type="password" value="" name="password"/>
+			</td>
+		</tr>
+		<tr>
+			<td colspan="2" align="center">
+				<button type="submit">Login</button>
+			</td>
+		</tr>
+	</table>
+</form>
+
+</body>
+</html>
